@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:actionBarNavMode="list"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <EditText
+        android:id="@+id/nameTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="@string/nameTextFieldHint"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/surnameTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="@string/surnameTextFieldHint"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextField" />
+
+    <EditText
+        android:id="@+id/citizenNoTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/citizenNoTextFieldHint"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameTextField" />
+
+    <EditText
+        android:id="@+id/birthPlaceTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/birthPlaceTextFieldHint"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/citizenNoTextField" />
+
+    <EditText
+        android:id="@+id/birthDatePicker"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/birthDateTextFieldHint"
+        android:inputType="date"
+        android:selectAllOnFocus="false"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthPlaceTextField" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="108dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/image_view_border"
+        android:layout_marginEnd="20dp"
+        android:padding="2dp"
+        android:contentDescription="@string/imageViewHint"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars[2]" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="11dp"
+        android:textAlignment="textStart"
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/submit_button_image"
+        android:text="@string/submitButtonHint"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/clear_button_image"
+        android:text="@string/clearButtonHint"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/phoneTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/phoneTextFieldHint"
+        android:inputType="phone"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthDatePicker" />
+
+    <Button
+        android:id="@+id/listButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/list_button_image"
+        android:text="@string/listButtonHint"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/submitButton"
+        app:layout_constraintStart_toEndOf="@+id/clearButton" />
+
+    <EditText
+        android:id="@+id/emailTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/emailTextHint"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTextField"
+        android:autofillHints="" />
+
+</android.support.constraint.ConstraintLayout>

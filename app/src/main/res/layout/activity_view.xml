@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:actionBarNavMode="list"
+    android:layout_height="match_parent"
+    tools:context=".ViewActivity">
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/email_button_image2"
+        android:text="@string/sendButtonHint"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/emailTextField"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTextField" />
+
+    <EditText
+        android:id="@+id/emailTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/emailTextHint"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTextField" />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/call_button_image"
+        android:text="@string/callButtonHint"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/phoneTextField"
+        app:layout_constraintTop_toBottomOf="@+id/ageTextField" />
+
+    <EditText
+        android:id="@+id/nameTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/nameTextFieldHint"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/surnameTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/surnameTextFieldHint"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextField" />
+
+    <EditText
+        android:id="@+id/citizenNoTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/citizenNoTextFieldHint"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameTextField" />
+
+    <EditText
+        android:id="@+id/birthPlaceTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/birthPlaceTextFieldHint"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/citizenNoTextField" />
+
+    <EditText
+        android:id="@+id/birthDatePicker"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/birthDateTextFieldHint"
+        android:inputType="date"
+        android:selectAllOnFocus="false"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthPlaceTextField" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="108dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="2dp"
+        android:background="@drawable/image_view_border"
+        android:contentDescription="@string/imageViewHint"
+        android:focusable="false"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars[2]" />
+
+    <EditText
+        android:id="@+id/phoneTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:backgroundTint="@color/colorPrimary"
+        android:focusable="false"
+        android:hint="@string/phoneTextFieldHint"
+        android:inputType="phone"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageTextField" />
+
+    <EditText
+        android:id="@+id/ageTextField"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="false"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="@string/ageTextFieldHint"
+        android:inputType="numberDecimal"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthDatePicker" />
+
+</android.support.constraint.ConstraintLayout>

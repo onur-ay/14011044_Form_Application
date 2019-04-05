@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Form Application</string>
+    <string name="nameTextFieldHint">Name</string>
+    <string name="surnameTextFieldHint">Surname</string>
+    <string name="citizenNoTextFieldHint">Citizenship Number</string>
+    <string name="birthPlaceTextFieldHint">Birth Place</string>
+    <string name="uploadButtonName">Upload</string>
+    <string name="birthDateTextFieldHint">Birth Date</string>
+    <string name="submitButtonHint">Submit</string>
+    <string name="clearButtonHint">Clear</string>
+    <string name="phoneTextFieldHint">Phone Number</string>
+    <string name="imageViewHint">Upload a Photo</string>
+    <string name="callButtonHint">Call</string>
+    <string name="ageTextFieldHint">Age</string>
+    <string name="backButtonHint">Back</string>
+    <string name="courseNameTextHint">courseName</string>
+    <string name="courseImageViewHint">courseImageView</string>
+    <string name="courseLecturerHint">courseLecturer</string>
+    <string name="deleteCourseImageHint">deleteCourseImage</string>
+    <string name="listButtonHint">Go To List</string>
+    <string name="gridView">Grid View</string>
+    <string name="linearViewVertical">Linear View Vertical</string>
+    <string name="staggeredGridView">Staggered Grid View</string>
+    <string name="addButtonHint">Add</string>
+    <string name="usernameTextHint">Username</string>
+    <string name="passwordTextHint">Password</string>
+    <string name="signinButtonHint">Sign In</string>
+    <string name="signupButtonHint">Sign Up</string>
+    <string name="loginScreenImageContentDescr">loginScreenImage</string>
+    <string name="emailTextHint">E-Mail</string>
+    <string name="sendButtonHint">Send</string>
+    <string name="courseGradeAvgHint">courseGradeAvg</string>
+    <string name="courseStudentQuotaHint">courseStudentCapacity</string>
+    <string name="courseContentHint">courseContent</string>
+    <string name="courseTargetHint">courseTarget</string>
+    <string name="courseGradeHint">courseGrade</string>
+</resources>
